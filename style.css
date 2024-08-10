@@ -60,6 +60,13 @@ body{
     font-size: 16px;
     color: white;
 }
+.section-s2 p:hover{
+    transition: 0.5s;
+    background-color: transparent;
+    cursor: pointer;
+    color: #9b3ede;
+
+}
 .mylearning{
     position: relative;
 }
@@ -81,12 +88,28 @@ body{
 
 }
 .flash-sale{
-    position: absolute;
+    /* position: absolute; */
     border: solid black 2px;
     width: fit-content;
     padding: 15px;
+    position: absolute;
     top: 20px;
     left: 15px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    /* opacity: 0; */
+
+}
+@keyframes zoom {
+    0%{
+        transform:scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform:scale(1);
+        opacity: 1;
+    }
+}
 }
 .sales-image img{
     width: 100%;
